@@ -26,6 +26,11 @@
 }
 body{
     font-family: 'Poppins';
+    min-height: 100vh;
+    min-width: 100%;
+    flex-direction:row;
+    text-rendering: optimizeSpeed;
+    scroll-behavior: smooth;
 }
 .site{
     width: 100%;
@@ -855,6 +860,21 @@ body{
         width: 90%;
         height: 450px;
     }
+
+    .footer h2{
+        letter-spacing: 11px;
+        font-size: 19px;
+    }
+    .footer p{
+        letter-spacing: 1.5px;
+        font-size: 10px;
+    }
+    .contact .row .col:last-child{
+        justify-content: start;
+    }
+    .contact .row .col:last-child ul{
+        margin-left: 0;
+    }
 }
 @media (width: 768px) and (height:1024px){
     .about, .contact{
@@ -913,6 +933,14 @@ body{
     }
 }
 @media (orientation: landscape){
+    .footer h2{
+        letter-spacing: 15px;
+        font-size: 26px;
+    }
+    .footer p{
+        letter-spacing: 8.5px;
+        font-size: 14px;
+    }
     @media (max-width:736px){
         .site .main .inner-bottom{
             grid-auto-flow: column;
