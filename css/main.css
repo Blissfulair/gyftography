@@ -858,7 +858,7 @@ body{
     }
     .inner-media, .inner-vid{
         width: 90%;
-        height: 450px;
+        height: 40%;
     }
 
     .footer h2{
@@ -874,6 +874,9 @@ body{
     }
     .contact .row .col:last-child ul{
         margin-left: 0;
+    }
+    .inner-media span, .inner-vid .v-close{
+        top: -17%
     }
 }
 @media (width: 768px) and (height:1024px){
@@ -904,11 +907,11 @@ body{
     }
     .inner-media{
         width: 90%;
-        height: 400px;
+        height: 40%;
     }
     .inner-vid{
         width: 90%;
-        height: 400px;
+        height: 40%;
     }
 }
 @media (min-width: 1023px) and (max-width: 1040px){
@@ -940,6 +943,9 @@ body{
     .footer p{
         letter-spacing: 8.5px;
         font-size: 14px;
+    }
+    .inner-media, .inner-vid{
+        height: 72%;
     }
     @media (max-width:736px){
         .site .main .inner-bottom{
@@ -984,6 +990,9 @@ body{
         .inner-vid{
             width: 90%;
             height: 400px;
+        }
+        .inner-media span, .inner-vid .v-close{
+            top: -17%
         }
     }
     @media(min-width: 812px) and (max-width:823px){

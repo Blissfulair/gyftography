@@ -1,4 +1,5 @@
 let toggle = false;
+let mobileToggle = false
 let count = 0;
 let menuItem = 'all';
 let img = 0;
@@ -122,7 +123,6 @@ document.querySelector('.mobile-menu').addEventListener('click', (e)=>{
         document.querySelector('.mmenu').style.transform = 'translateX(150%)';
         document.querySelector('.cross').style.display ='none'
         document.querySelector('.open').style.display ='grid'
-        moveTo(0, window.innerHeight)
         toggle = false;
     }
     else{
@@ -132,6 +132,14 @@ document.querySelector('.mobile-menu').addEventListener('click', (e)=>{
         toggle = true;
     }
 })
+// document.querySelector('body').addEventListener('click', (e)=>{
+//     if(toggle){
+//         document.querySelector('.mmenu').style.transform = 'translateX(150%)';
+//         document.querySelector('.cross').style.display ='none'
+//         document.querySelector('.open').style.display ='grid'
+//         toggle = false;
+//     }
+// })
 document.querySelector('.prev').addEventListener('click', (e)=>{
         if(count <= 0)
         count = hitems.length;
