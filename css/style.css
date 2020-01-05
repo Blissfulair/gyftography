@@ -9,11 +9,13 @@ p{
     color: #fff;
 } */
 ul li a, p, a, label, .footer h2{
+    transition: all 500ms ease-in-out !important;
     color: #fff !important;
 }
 h2{
     color: #C40000;
+    transition: all 500ms ease-in-out !important
 }
 .activate span{
-    border-color:#fff !important;
+    background: #fff !important;
 }
